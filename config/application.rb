@@ -18,5 +18,8 @@ module HelloApp
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # sqlite3の警告を無効にする
+    config.active_record.sqlite3_production_warning=false
   end
 end
